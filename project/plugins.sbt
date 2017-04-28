@@ -21,3 +21,5 @@ addSbtPlugin("com.jsuereth" % "sbt-pgp" % "1.0.0")
 addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.1.0")
 
 addSbtPlugin("com.typesafe" % "sbt-mima-plugin" % "0.1.7")
+
+addSbtPlugin("org.foundweekends" % "sbt-bintray" % "0.4.0")

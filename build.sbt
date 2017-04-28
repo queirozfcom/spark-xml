@@ -1,8 +1,10 @@
 name := "spark-xml"
 
-version := "0.4.1"
+version := "0.4.2"
 
-organization := "com.databricks"
+organization := "com.queirozf"
+
+licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0.html"))
 
 scalaVersion := "2.11.7"
 

@@ -28,8 +28,12 @@ private[xml] object StaxXmlParserUtils {
         // When other events are found here rather than `EndElement` or `StartElement`
         // , we need to look further to decide if this is the end because this can be
         // whitespace between `EndElement` and `StartElement`.
-        parser.nextEvent
-        checkEndElement(parser)
+        if (parser.hasNext) {
+          parser.nextEvent
+          checkEndElement(parser)
+        } else {
+          true
+        }
     }
   }
 
